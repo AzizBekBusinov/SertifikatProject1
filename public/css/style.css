@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+body.web ::selection {
+  color: #000 !important;
+  background: #dbdbdb !important;
+}
+
+body {
+  text-transform: capitalize;
+  font-family: "Comfortaa", cursive;
+}
+
+textarea {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.title {
+  text-align: center;
+  margin: 15px;
+}
+
+form {
+  margin-top: 3rem;
+}
+
+.form-control:focus {
+  border-color: #92b9f7;
+  box-shadow: 0 0 20px 5px rgb(151 188 247);
+}
+
+.form-control {
+  user-select: auto;
+}
+
+.hide_password {
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide_password:hover {
+  color: rgb(80, 80, 80);
+}
+
+/* XATOLIKLAR VA SHARTLAR */
+
+.shart {
+  color: rgb(219, 31, 31);
+  font-weight: 700;
+}
+
+.savol {
+  color: #9e9c9c;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.invalid {
+  border-color: red;
+  box-shadow: 0 0 20px 5px rgb(255, 144, 144);
+}
+
+#error,
+#pass,
+#password_msg {
+  color: red;
+  font-style: italic;
+}
+
+#password_true,
+.podskazka {
+  /* color: rgb(142, 221, 23); */
+  color: rgb(58, 206, 32);
+  font-style: italic;
+}
+
+/* ERROR PUG */
+
+.error {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.error img {
+  width: 100%;
+  height: 100%;
+}
+
+/* NAVBAR PUG */
+
+.navbar-expand-lg {
+  padding: 0 !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: 18px;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #dbdbdb !important;
+}
+
+.navbar-brand {
+  width: 75px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+
+.sticky {
+  margin-top: 0px !important;
+  padding: 30px;
+  border-bottom: 0 !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.94;
+}
+
+.navbar {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transition: 1s;
+  width: 100%;
+  z-index: 1000;
+}
+
+.myNav {
+  box-shadow: 0 0 20px 3px #5793f2 inset;
+}
+
+.icon-tabler {
+  transition: 0.5s;
+  border-radius: 5px;
+  border-color: #000 !important;
+}
+
+.icon-tabler:hover {
+  background: #b5d0fb;
+  transition: 0.5s;
+}
+
+/* LOGIN FORMA */
+
+.loginform {
+  width: 500px;
+  margin: auto;
+}
+
+/* ========================= CAROUSEL ======================== */
+
+#carouselExampleCaptions .carousel-inner .carousel-item {
+  width: 100%;
+  height: 600px;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item img {
+  width: 100px;
+  height: 100%;
+}
+
+.carousel-caption {
+  color: rgb(107, 107, 107) !important;
+}
+
+/* ALERT FLASH */
+
+.messages .alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

@@ -1,0 +1,46 @@
+extends layout
+block content
+  include navbar
+  .container
+    h1.title= title
+    form(action="add" method="post" enctype= 'multipart/form-data').mb-5 
+      .mb-3
+        label.form-label(for='exampleInputEmail1') nomi
+          span.shart  *
+        input.form-control#exampleInputEmail1.toldir(name="title" type='text')
+      .mb-3
+        label.form-label(for='exampleInputEmail1') narxi 
+          span.shart  *
+        input.form-control#exampleInputEmail1.toldir(name="price" type='text')
+      .mb-3
+        label.form-label(for='exampleInputEmail1') mahsulot rasmi 
+          span.shart  *
+        input.form-control#exampleInputEmail1.toldir(name="img" type='file' multiple)
+      .mb-3
+        label.form-label(for='exampleInputEmail1') chegirmasi bormi ?
+          span.savol  (agar bor bo'lsa sonda kiriting ...)
+        input.form-control#exampleInputEmail1(name="sale" type='text')
+      .mb-3
+        label.form-label(for='exampleInputEmail1') muddatli to'lovgami ?
+          span.savol  (agar muddatli bo'lsa necha oyga (sonda) kiriting ...)
+        input.form-control#exampleInputEmail1(name="lifetime" type='text')
+      .mb-3
+        label.form-label(for='exampleInputEmail1') kategoriyasi
+          span.shart  *
+        select(name="category").form-control 
+          option(value="mashina") Mashina
+          option(value="telefon") Telefon
+          option(value="uy_joy") Uy joy
+          option(value="bolalar_uchun") Bolalar uchun
+          option(value="kiyim_kechak") Kiyim kechak
+      .mb-3
+        label.form-label(for='exampleInputEmail1') mahsulot haqida qisqacha
+          span.shart  *
+        textarea(name="aboutPro", rows="3").form-control.toldir
+      .mb-3
+        label.form-label(for='exampleInputEmail1') telefon raqamingiz
+          span.shart  *
+          span.savol  (+998 ... .. ..)
+        input.form-control#exampleInputEmail1.toldir(name="phone" type='number')
+      .mb-3
+      button.btn.btn-primary(type='submit') Joylash

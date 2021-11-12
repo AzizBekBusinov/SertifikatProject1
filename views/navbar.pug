@@ -1,0 +1,66 @@
+//- extends layout
+
+//- block content
+
+//-     nav.navbar.navbar-expand-lg
+//-         .container-fluid
+//-             a.navbar-brand(href='/')
+//-                 img(src="/images/logotip.png")
+//-             button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+//-                 span.navbar-toggler-icon
+//-             .collapse.navbar-collapse#navbarNav
+//-                 ul.navbar-nav
+//-                     li.nav-item
+//-                         a.nav-link.active(aria-current='page' href='/') 
+//-                             //- ion-icon(name='home-outline')
+//-                             svg.icon.icon-tabler.icon-tabler-home(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round')
+//-                             path(stroke='none' d='M0 0h24v24H0z' fill='none')
+//-                             polyline(points='5 12 3 12 12 3 21 12 19 12')
+//-                             path(d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7')
+//-                             path(d='M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6')
+//-                     li.nav-item
+//-                         a.nav-link(href='#') Features
+//-                     li.nav-item
+//-                         a.nav-link(href='#') Pricing
+
+
+nav.navbar.navbar-expand-lg.myNav
+    .container
+        a.navbar-brand(href='/')
+            img(src="/images/logotip.png").logo
+        .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav
+            li.nav-item
+                a.nav-link(href="/")
+                    svg.icon.icon-tabler.icon-tabler-home(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        polyline(points='5 12 3 12 12 3 21 12 19 12')
+                        path(d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7')
+                        path(d='M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6')
+            if user && user.login == user.login
+                li.nav-item
+                    a.nav-link(href='/add')
+                        svg.icon.icon-tabler.icon-tabler-square-plus(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            rect(x='4' y='4' width='16' height='16' rx='2')
+                            line(x1='9' y1='12' x2='15' y2='12')
+                            line(x1='12' y1='9' x2='12' y2='15')
+            li.nav-item
+                a.nav-link(href='/register')
+                    svg.icon.icon-tabler.icon-tabler-user-plus(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        circle(cx='9' cy='7' r='4')
+                        path(d='M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2')
+                        path(d='M16 11h6m-3 -3v6')
+            li.nav-item
+                a.nav-link.kirish(href='/login')
+                    svg.icon.icon-tabler.icon-tabler-login(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2')
+                        path(d='M20 12h-13l3 -3m0 6l-3 -3')
+            li.nav-item
+                a.nav-link(href="/logout")
+                    svg.icon.icon-tabler.icon-tabler-logout(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2')
+                        path(d='M7 12h14l-3 -3m0 6l3 -3')
